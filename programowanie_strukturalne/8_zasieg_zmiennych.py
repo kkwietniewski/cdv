@@ -1,7 +1,7 @@
 #zasięg zmiennych, zmienne lokalne i globalne
 
 #precyzja liczby(zaokrąglenie do 3 liczb po przecinku)
-'''
+
 x = "{0:.3f}".format(5)
 print(x)
 def	plnToChf(value):			#Franki(Chf) na złotówki
@@ -36,7 +36,7 @@ pln = input('Podaj kwotę PLN jaką chcesz wymienić na USD: ')
 usd = plnToUSD(float(pln))
 print(f'Ilość {pln}PLN = {usd}USD')
 print(f'\nKurs dolara: {kursUSD}')
-'''
+
 
 ####################################################################
 
