@@ -86,6 +86,8 @@ Uzytkownik ma na podanie 3 proby, jesli przekroczy ilosc prob to wyswietli mu si
 
 '''
 
+#Program sprawdzajacy haslo przy 3 probach
+
 haslo = 'okon'
 phaslo = input('Podaj haslo (limit 3): ')
 i=1
