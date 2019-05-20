@@ -88,17 +88,18 @@ Uzytkownik ma na podanie 3 proby, jesli przekroczy ilosc prob to wyswietli mu si
 
 haslo = 'okon'
 phaslo = input('Podaj haslo (limit 3): ')
-i=3
+i=1
 while phaslo!='1yu':
-	if(i==0):
+	if(i==3 and phaslo!='okon'):
 		print('Przekroczono limit podania hasla')
 		phaslo='1yu'
 	else:
 		if(phaslo==haslo):
 			print(f'Podane haslo {phaslo} jest rowne {haslo}')
+			print(f'Haslo odgadnieto za {i} proba')
 			phaslo='1yu'
 		else:
 			print('Podaj poprawne haslo')
 			phaslo = input('Podaj haslo: ')
-			i=i-1
+			i=i+1
 			continue
