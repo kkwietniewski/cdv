@@ -54,9 +54,26 @@ print(lista)
 #wybranie elementu listy
 print(lista[1])
 '''
+'''
 #wyswietlanie łańcucha znaków
 wersja = "{0}, PHP, {1}".format("Java", "JS", "CSS")
 print(wersja)
 #podmiana tekstu
 zamiana = wersja.replace("Java", "C++")
 print(zamiana)
+'''
+'''
+#funkcje matematyczne
+#import biblioteki math
+import math
+pi = math.pi
+pierw = math.sqrt(7)
+print("Liczba pi:",pi)
+print("Pierwiastek z 7 to:",pierw)
+#import bibl random
+import random
+los = random.random()
+print(los)
+print(random.randint(0,100))
+print(random.choice(["Ala", "Kot", "Ma"]))
+'''
