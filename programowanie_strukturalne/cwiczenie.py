@@ -77,3 +77,63 @@ print(los)
 print(random.randint(0,100))
 print(random.choice(["Ala", "Kot", "Ma"]))
 '''
+'''
+import math
+import random
+x = input("podaj poczatek przedzialu: ")
+s = input("podaj koniec przedzialu: ")
+print(type(x))
+print(type(s))
+x = int(x)
+s = int(s)
+print(type(x))
+print(type(s))
+y = random.randint(x,s)
+if x<0:
+    print(x)
+else:
+    print(y)
+'''
+'''
+import math
+x = 9
+y = math.pow(x,2)
+print('->',y)
+'''
+
+'''
+    Utwórz funkcję zwracającą iloczyn dwóch liczba, uzytkownik podaje dane z klawiatury
+'''
+'''
+def iloczyn(liczba1,liczba2):
+    il = liczba1*liczba2
+    return il
+liczbaPierwsza = int(input("Podaj pierwszy dzielnik: "))
+liczbaDruga = int(input("Podaj drugi dzielnik: "))
+#liczbaPierwsza = int(liczbaPierwsza)
+#liczbaDruga = int(liczbaDruga)
+#print(type(liczbaPierwsza))
+#print(type(liczbaDruga))
+print(f'Iloczyn 2 liczb to: {iloczyn(liczbaPierwsza,liczbaDruga)}')
+'''
+
+zaok = float(input('Podaj liczbe do zaokraglenia: '))
+x = "{0:.3f}".format(zaok)
+print(x)
+
+zmiennaGlobalna = 10
+print(f'\n\n Wartość zmiennaGlobalna: {zmiennaGlobalna}')
+print(f'Id zmiennaGlobalna: {id(zmiennaGlobalna)}')
+
+def spr():
+	global zmiennaGlobalna					# global - przypisuje wartość globalnie, bez global po wyjściu z funkcji wartość wraca do poprzedniej
+	zmiennaGlobalna = 20
+	print(f'\n\n Wartość zmiennaGlobalna wewnątrz funkcji: {zmiennaGlobalna}')
+	print(f'Id zmiennaGlobalna: {id(zmiennaGlobalna)}')
+
+
+spr()
+
+print(f'Wartośc zmiennaaGlobalna: {zmiennaGlobalna}')
+
+
